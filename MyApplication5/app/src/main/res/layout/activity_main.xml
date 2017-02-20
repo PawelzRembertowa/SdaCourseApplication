@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,3 +23,72 @@
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 </RelativeLayout>
+    <LinearLayout
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_gravity="start"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/drawing_app"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:text="Rysowanie"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/gra_refleks"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:text="Gra Refleks"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:text="Flaga"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@android:color/holo_orange_light"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:text="Galeria"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:text="Broadcast"
+
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
